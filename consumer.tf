@@ -13,7 +13,6 @@ resource "aws_lambda_function" "consumer_lambda" {
     image_uri = module.consumer_docker_image.image_uri
     role = aws_iam_role.lambda_exec.arn
     timeout = var.consumer_timeout_seconds
-    memory_size = 3009
 
     environment {
         variables = {

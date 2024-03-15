@@ -27,7 +27,7 @@ variable "lambda_bucket" {
     description = "Bucket for all lambda archives"
 
     type = string
-    default = "temp-lambda-archive-bucket"
+    default = "render-test-05031222-lambda-bucket"
 }
 
 variable "default_tags" {
@@ -124,5 +124,5 @@ variable "consumer_timeout_seconds" {
     description = "Timeout for the consumer lambda"
 
     type = number
-    default = 900
+    default = 899
 }
